@@ -1,1 +1,1 @@
-# Spazio di Lavoro per la Social Network Analysis
+# Spazio di Lavoro Social Network Analysis
