@@ -4,6 +4,6 @@ Progetto della materia "Data Science" del corso di Ingegneria Informatica e dell
 
 Progetto realizzato dagli studenti:
 - Ali Waqar Badar
-- Angelone MAttia Domenico
+- Angelone Mattia Domenico
 - Giannelli Edoardo
 - Romanelli Marco
