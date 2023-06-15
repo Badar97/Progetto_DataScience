@@ -1,0 +1,24 @@
+versione: "3.1"
+
+rules:
+
+- rule: Dici addio ogni volta che l'utente dice addio
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Dici 'Sono un bot' ogni volta che l'utente ti sfida
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+
+- rule: Star the conversation
+  steps:
+  - intent: start
+  - action: utter_start
+
+- rule: End the conversation
+  steps:
+  - intent: stop
+  - action: utter_stop

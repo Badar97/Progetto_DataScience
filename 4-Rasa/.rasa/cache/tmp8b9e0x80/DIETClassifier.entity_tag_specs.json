@@ -1,0 +1,52 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-data",
+      "2": "I-data",
+      "3": "L-data",
+      "4": "U-data",
+      "5": "B-mese",
+      "6": "I-mese",
+      "7": "L-mese",
+      "8": "U-mese",
+      "9": "B-oggetto",
+      "10": "I-oggetto",
+      "11": "L-oggetto",
+      "12": "U-oggetto",
+      "13": "B-prezzo",
+      "14": "I-prezzo",
+      "15": "L-prezzo",
+      "16": "U-prezzo",
+      "17": "B-tipologia",
+      "18": "I-tipologia",
+      "19": "L-tipologia",
+      "20": "U-tipologia",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-data": 1,
+      "I-data": 2,
+      "L-data": 3,
+      "U-data": 4,
+      "B-mese": 5,
+      "I-mese": 6,
+      "L-mese": 7,
+      "U-mese": 8,
+      "B-oggetto": 9,
+      "I-oggetto": 10,
+      "L-oggetto": 11,
+      "U-oggetto": 12,
+      "B-prezzo": 13,
+      "I-prezzo": 14,
+      "L-prezzo": 15,
+      "U-prezzo": 16,
+      "B-tipologia": 17,
+      "I-tipologia": 18,
+      "L-tipologia": 19,
+      "U-tipologia": 20,
+      "O": 0
+    },
+    "num_tags": 21
+  }
+]

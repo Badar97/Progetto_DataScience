@@ -1,0 +1,26 @@
+[
+  {
+    "name": "data",
+    "pattern": "([0-9]{1,2})-(1[0-2]|0[1-9])-([0-9]{4})"
+  },
+  {
+    "name": "data_fine",
+    "pattern": "([0-9]{1,2})-(1[0-2]|0[1-9])-([0-9]{4})"
+  },
+  {
+    "name": "data_inizio",
+    "pattern": "([0-9]{1,2})-(1[0-2]|0[1-9])-([0-9]{4})"
+  },
+  {
+    "name": "mese",
+    "pattern": "(\\bGennaio\\b|\\bFebbraio\\b|\\bMarzo\\b|\\bAprile\\b|\\bGiugno\\b|\\bLuglio\\b|\\bAgosto\\b|\\bSettembre\\b|\\bOttobre\\b|\\bNovembre\\b|\\bDicembre\\b)"
+  },
+  {
+    "name": "tipologia",
+    "pattern": "(\\bElettronica\\b|\\bCultura\\b|\\bAccessori\\b|\\bAbbigliamento\\b|\\bBellezza\\b|\\bIntrattenimento\\b|\\bCasa\\b|\\bAlimentari\\b|\\bSport\\b)"
+  },
+  {
+    "name": "prezzo",
+    "pattern": "(\\b1\\b|\\b2\\b|\\b5\\b|\\b10\\b|\\b20\\b|\\b50\\b|\\b100\\b|\\b200\\b|\\b500\\b|\\b1000\\b|\\b2000\\b|\\b5000\\b|\\b10000\\b)"
+  }
+]

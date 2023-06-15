@@ -1,0 +1,110 @@
+version: "3.1"
+nlu:
+- intent: start
+  examples: |
+    - start
+    - inizia
+    - parti
+- intent: stop
+  examples: |
+    - spegni
+    - chiudi
+    - stop
+- intent: greet
+  examples: |
+    - ciao
+    - salve
+    - ciao ciao
+    - buongiorno
+    - buonasera
+    - moin
+    - ciao amico
+    - andiamo
+    - hey
+    - ciao bello
+    - buon giorno
+    - buona sera
+    - buon pomeriggio
+- intent: goodbye
+  examples: |
+    - arrivederci
+    - a presto
+    - ci vediamo dopo
+    - buonanotte
+    - ciao
+    - arrivederla
+    - buona giornata
+    - ci si vede in giro
+    - ciao ciao
+    - a dopo
+- intent: affirm
+  examples: |
+    - sì
+    - certo
+    - sicuramente
+    - ovviamente
+    - suona bene
+    - corretto
+- intent: deny
+  examples: |
+    - no
+    - non credo
+    - non mi piace
+    - assolutamente no
+    - in nessun modo
+    - proprio no
+    - non proprio
+- intent: mood_great
+  examples: |
+    - perfetto
+    - ottimo
+    - fantastico
+    - mi sento come un re
+    - meraviglioso
+    - mi sento molto bene
+    - sto benissimo
+    - sono fantastico
+    - salverò il mondo
+    - super emozionato
+    - estremamente buono
+    - così così perfetto
+    - così buono
+    - così perfetto
+- intent: mood_unhappy
+  examples: |
+    - la mia giornata è stata orribile
+    - sono triste
+    - non mi sento molto bene
+    - sono deluso
+    - super triste
+    - sono così triste
+    - triste
+    - molto triste
+    - infelice
+    - non buono
+    - non molto buono
+    - estremamente triste
+    - così triste
+- intent: bot_challenge
+  examples: |
+    - sei un bot?
+    - sei un umano?
+    - sto parlando con un bot?
+    - sto parlando con un umano?
+- intent: nlu_fallback
+  examples: |
+    - oaic
+- intent: add
+  examples: |
+    - aggiungi un [computer](oggetto) in [elettronica](tipologia) acquistato il [9-3-2023](data)
+    - aggiungi uno zaino in [casa](tipologia) acquistato il [8-3-2023](data) a [25](prezzo)
+    - aggiungi un [tablet](oggetto) in [elettronica](tipologia) acquistato il [5-3-2023](data) a [79](prezzo)
+- intent: info_tipology
+  examples: |
+    - spesa per la [casa](tipologia)
+    - spesa per [elettronica](tipologia)
+    - spesa per [intrattenimento](tipologia)
+    - spesa per [abbigliamento](tipologia)
+- intent: help
+  examples: |
+    - cosa mi mangio

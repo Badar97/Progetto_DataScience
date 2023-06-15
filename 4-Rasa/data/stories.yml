@@ -1,0 +1,174 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: nuova spesa
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: add
+  - action: action_add
+
+- story: eliminazione spesa
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: delete
+  - action: action_delete
+
+- story: aiuto
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help
+  - action: utter_help
+
+- story: curiosità
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: curiosity
+  - action: utter_curiosity
+
+- story: info giorno
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: info_day
+  - action: action_info_day
+
+- story: info periodo
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: info_range
+  - action: action_info_range
+
+- story: info tipologia
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: info_tipology
+  - action: action_info_tipology
+
+- story: info statistiche
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: info_stats
+  - action: action_info_stats
+
+- story: info statistiche mese
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: info_stats_month
+  - action: action_stats_month
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: info_day
+  - action: action_info_day
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: nlu_fallback
+  - action: utter_fallback
+  - intent: add
+    entities:
+    - tipologia: elettronica
+    - data: 9-3-2023
+  - slot_was_set:
+    - data: 9-3-2023
+  - slot_was_set:
+    - tipologia: elettronica
+  - intent: add
+    entities:
+    - oggetto: computer
+    - tipologia: elettronica
+    - data: 9-3-2023
+  - action: action_add
+  - intent: add
+    entities:
+    - tipologia: casa
+    - data: 8-3-2023
+    - prezzo: '25'
+  - slot_was_set:
+    - data: 8-3-2023
+  - slot_was_set:
+    - tipologia: casa
+  - slot_was_set:
+    - prezzo: '25'
+  - action: action_add
+  - intent: add
+    entities:
+    - oggetto: tablet
+    - tipologia: elettronica
+    - data: 5-3-2023
+    - prezzo: '79'
+  - slot_was_set:
+    - data: 5-3-2023
+  - slot_was_set:
+    - oggetto: tablet
+  - slot_was_set:
+    - tipologia: elettronica
+  - slot_was_set:
+    - prezzo: '79'
+  - action: action_add
+  - intent: info_tipology
+    entities:
+    - tipologia: casa
+  - slot_was_set:
+    - tipologia: casa
+  - action: action_info_tipology
+  - intent: info_tipology
+    entities:
+    - tipologia: elettronica
+  - slot_was_set:
+    - tipologia: elettronica
+  - action: action_info_tipology
+  - intent: info_tipology
+    entities:
+    - tipologia: intrattenimento
+  - slot_was_set:
+    - tipologia: intrattenimento
+  - action: action_info_tipology
+  - intent: info_tipology
+    entities:
+    - tipologia: abbigliamento
+  - slot_was_set:
+    - tipologia: abbigliamento
+  - action: action_info_tipology
+  - intent: help
+  - action: utter_help

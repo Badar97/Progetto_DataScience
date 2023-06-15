@@ -1,0 +1,216 @@
+version: "3.1"
+
+nlu:
+
+- intent: help
+  examples: |
+    - aiuto
+    - aiutami
+    - quali sono i comandi?
+    - cosa posso chiederti?
+    - cosa posso chiedere a te?
+    - cosa posso fare?
+    - cosa puoi dirmi?
+    - quali cose posso chiederti?
+    - cosa puoi fare?
+    - quali informazioni puoi darmi?
+    - comandi
+    
+- intent: curiosity
+  examples: |
+    - dimmi qualcosa di interessante
+    - sai qualche curiosità?
+    - qualche curiosità
+    - fatti interessanti
+    - qual è un fatto interessante?
+    - conisci qualche evento interessante?
+    - conosci qualche bella curiosità?
+    - dimmi una curiosità
+
+- intent: add
+  examples: |
+    - aggiungi un [tablet](oggetto) in [elettronica](tipologia) acquistato il [25-5-2023](data) a [500](prezzo)
+    - per favore, aggiungi il [orologio](oggetto) che ho comprato il [25-5-2023](data) in [accessori](tipologia). Il prezzo è di [500](prezzo)
+    - ho appena acquistato una [giacca](oggetto) in [abbigliamento](tipologia) al prezzo di [500](prezzo) il [25-5-2023](data)
+    - [gioielli](oggetto) [accessori](tipologia) [500](prezzo) [25-5-2023](data)
+    - ho effettuato un acquisto di [abbigliamento](tipologia): un [pantaloni](oggetto) a [500](prezzo). Aggiungi questo oggetto al [25-5-2023](data)
+    - potresti inserire il [gioco da tavolo](oggetto) che ho appena acquistato al prezzo di [500](prezzo) oggi [25-5-2023](data) nella sezione [intrattenimento](tipologia)?
+    - aggiungi il [vaso](oggetto) in [casa](tipologia) che ho comprato il [25-5-2023](data) al prezzo di [500](prezzo) alla tabella degli acquisti?
+
+- intent: delete
+  examples: |
+    - elimina l'acquisto [libro](oggetto)
+    - rimuovi il [libro](oggetto) 
+    - per favore, rimuovi il [binocolo](oggetto) dagli acquisti
+    - Ho bisogno di eliminare il [olio essenziale](oggetto) dagli acquisti. Potresti farlo?
+    - Rimuovi dagli acquisti il [cassettiera](oggetto) che ho acquistato 
+    - Il [strumento musicale](oggetto) deve essere rimosso dagli acquisti. Puoi farlo?
+    - Potresti eliminare il [tè](oggetto)
+
+- intent: info_day
+  examples: |
+    - dimmi cosa ho acquistato il [25-5-2023](data)
+    - per favore puoi dirmi cosa ho comprato il [25-5-2023](data)?
+    - Vorrei sapere quali sono gli articoli che ho comprato il [25-5-2023](data)
+    - Potresti dirmi quali sono gli oggetti che ho acquistato il [25-5-2023](data)?
+    - Mi piacerebbe conoscere gli acquisti effettuati il [25-5-2023](data). Puoi elencarli?
+    - acquisti del [25-5-2023](data)
+    - oggetti comprati il [25-5-2023](data)
+
+
+- intent: info_stats_month
+  examples: |
+    - Dimmi quanto ho speso nel mese di [Maggio](mese)
+    - mostrami la spesa totale di [Giugno](mese)
+    - puoi dirmi la spesa totale nel mese di [Luglio](mese)
+    - quanto ho speso nel mese di [Aprile](mese)
+    - fammi il calcolo di quanto ho speso a [Gennaio](mese)
+    - calcola la mia spesa nel mese di [Febbraio](mese)
+    - spesa di [Marzo](mese)
+    - dammi informazioni sulle mie spese nel mese di [Ottobre](mese)
+    - elencami la statistica nel mese di [Novembre](mese) delle mie spesa 
+    - puoi mostrarmi una panoramica dei miei acquisti nel mese di [Dicembre](mese)
+    - Mi piacerebbe avere un resoconto delle mie spese nel mese di [Gennaio](mese)
+    - Puoi darmi un'analisi delle mie spese nel mese di [Febbraio](mese)? 
+    - Dimmi quali sono le statistiche delle mie spese per il mese di [Marzo](mese)
+    - Puoi dirmi quali soldi ho speso nel mese di [Aprile](mese)? Voglio sapere tutti i dettagli 
+    - Sarebbe possibile ottenere un riepilogo delle mie spese nel mese di [Maggio](mese)?
+
+- intent: info_tipology
+  examples: |
+    - dimmi quanto ho speso per l'[abbigliamento](tipologia)
+    - mostrami la spesa totale per la [cultura](tipologia)
+    - puoi dirmi la spesa totale in [bellezza](tipologia)
+    - quanto ho speso per lo [sport](tipologia)
+    - fammi il calcolo di quanto ho speso per l'[alimentari](tipologia)
+    - calcola la mia spesa per l'[intrattenimento](tipologia)
+    - spesa per la [casa](tipologia)
+    - dammi informazioni sulle mie spese per l'[intrattenimento](tipologia)
+    - elencami la statistica delle mie spesa per l'[elettronica](tipologia)
+    - puoi mostrarmi una panoramica dei miei acquisti per la [casa](tipologia)
+    - Mi piacerebbe avere un resoconto delle mie spese per gli [accessori](tipologia)
+    - Puoi darmi un'analisi delle mie spese per la [cultura](tipologia)? 
+    - Dimmi quali sono le statistiche delle mie spese per la [bellezza](tipologia)
+    - Puoi dirmi quali soldi ho speso per lo [sport](tipologia)? Voglio sapere tutti i dettagli 
+    - Sarebbe possibile ottenere un riepilogo delle mie spese per l'[abbigliamento](tipologia)?
+
+- intent: info_stats
+  examples: |
+    - dammi informazioni sulle mie spese
+    - elencami la statistica delle mie spesa
+    - puoi mostrarmi una panoramica dei miei acquisti
+    - Mi piacerebbe avere un resoconto delle mie spese
+    - Puoi darmi un'analisi delle mie spese? 
+    - Dimmi quali sono le statistiche delle mie spese
+    - Puoi dirmi quali soldi ho speso? Voglio sapere tutti i dettagli
+    - Sarebbe possibile ottenere un riepilogo delle mie spese?
+
+- regex : data
+  examples: |
+   - ([0-9]{1,2})-(1[0-2]|0[1-9])-([0-9]{4})
+
+
+- lookup: mese
+  examples: |
+    - Gennaio
+    - Febbraio
+    - Marzo
+    - Aprile
+    - Giugno
+    - Luglio
+    - Agosto
+    - Settembre
+    - Ottobre
+    - Novembre
+    - Dicembre
+
+
+
+- lookup: oggetto
+  examples: |
+    - Smartphone
+    - Tastiera
+    - Cuffie
+    - Libro
+    - Orologio
+    - Scarpe
+    - Giacca
+    - Laptop
+    - Borsa
+    - Televisore
+    - Mouse
+    - Tablet
+    - Profumo
+    - Gioielli
+    - Fotocamera
+    - Maglietta
+    - Pantaloni
+    - Auricolari
+    - Gioco da tavolo
+    - Lampada
+    - Giocattolo
+    - Macchina fotografica
+    - Portafoglio
+    - Videogame
+    - Braccialetto
+    - Stampante
+    - Occhiali da sole
+    - Microfono
+    - Zaino
+    - Casse Bluetooth
+    - Quadro
+    - Tè
+    - Vaso
+    - Palla da calcio
+    - Puzzle
+    - Olio essenziale
+    - Strumento musicale
+    - Binocolo
+    - Cassettiera
+
+- lookup: tipologia
+  examples: |
+    - Elettronica
+    - Cultura
+    - Accessori
+    - Abbigliamento
+    - Bellezza
+    - Intrattenimento
+    - Casa
+    - Alimentari
+    - Sport
+
+- lookup: prezzo
+  examples: |
+    - 1
+    - 2
+    - 5
+    - 10
+    - 20
+    - 50
+    - 100
+    - 200
+    - 500
+    - 1000
+    - 2000
+    - 5000
+    - 10000
+
+- regex : prezzo
+  examples: |
+   - ([0-9]{1,7})
+
+
+- intent: info_range
+  examples: |
+    - dimmi quanto ho speso nel periodo  [1-3-2023/28-4-2023](range) 
+    - mostrami la spesa totale del [2-2-2023/3-2-2023](range)
+    - puoi dirmi la spesa totale dal [6-4-2023/15-9-2025](range)
+    - quanto ho speso dal [8-5-2023/4-8-2023](range)
+    - fammi il calcolo di quanto ho speso dal [11-7-2023/3-1-2023](range)
+    - calcola la mia spesa dal [18-9-2023/9-11-2023](range)
+    - spesa dal [22-7-2023/16-8-2023](range)
+
+- regex : range
+  examples: |
+   - ([0-9]{1,2})-(1[0-2]|0[1-9])-([0-9]{4})/([0-9]{1,2})-(1[0-2]|0[1-9])-([0-9]{4})

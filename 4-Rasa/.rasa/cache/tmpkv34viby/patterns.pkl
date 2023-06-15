@@ -1,0 +1,34 @@
+[
+  {
+    "name": "data",
+    "pattern": "([0-9]{1,2})-(1[0-2]|0[1-9])-([0-9]{4})"
+  },
+  {
+    "name": "data_fine",
+    "pattern": "([0-9]{1,2})-(1[0-2]|0[1-9])-([0-9]{4})"
+  },
+  {
+    "name": "data_inizio",
+    "pattern": "([0-9]{1,2})-(1[0-2]|0[1-9])-([0-9]{4})"
+  },
+  {
+    "name": "prezzo",
+    "pattern": "([0-9]{1,7})"
+  },
+  {
+    "name": "mese",
+    "pattern": "(\\bGennaio\\b|\\bFebbraio\\b|\\bMarzo\\b|\\bAprile\\b|\\bGiugno\\b|\\bLuglio\\b|\\bAgosto\\b|\\bSettembre\\b|\\bOttobre\\b|\\bNovembre\\b|\\bDicembre\\b)"
+  },
+  {
+    "name": "oggetto",
+    "pattern": "(\\bSmartphone\\b|\\bTastiera\\b|\\bCuffie\\b|\\bLibro\\b|\\bOrologio\\b|\\bScarpe\\b|\\bGiacca\\b|\\bLaptop\\b|\\bBorsa\\b|\\bTelevisore\\b|\\bMouse\\b|\\bTablet\\b|\\bProfumo\\b|\\bGioielli\\b|\\bFotocamera\\b|\\bMaglietta\\b|\\bPantaloni\\b|\\bAuricolari\\b|\\bGioco\\ da\\ tavolo\\b|\\bLampada\\b|\\bGiocattolo\\b|\\bMacchina\\ fotografica\\b|\\bPortafoglio\\b|\\bVideogame\\b|\\bBraccialetto\\b|\\bStampante\\b|\\bOcchiali\\ da\\ sole\\b|\\bMicrofono\\b|\\bZaino\\b|\\bCasse\\ Bluetooth\\b|\\bQuadro\\b|\\bTè\\b|\\bVaso\\b|\\bPalla\\ da\\ calcio\\b|\\bPuzzle\\b|\\bOlio\\ essenziale\\b|\\bStrumento\\ musicale\\b|\\bBinocolo\\b|\\bCassettiera\\b)"
+  },
+  {
+    "name": "tipologia",
+    "pattern": "(\\bElettronica\\b|\\bCultura\\b|\\bAccessori\\b|\\bAbbigliamento\\b|\\bBellezza\\b|\\bIntrattenimento\\b|\\bCasa\\b|\\bAlimentari\\b|\\bSport\\b)"
+  },
+  {
+    "name": "prezzo",
+    "pattern": "(\\b1\\b|\\b2\\b|\\b5\\b|\\b10\\b|\\b20\\b|\\b50\\b|\\b100\\b|\\b200\\b|\\b500\\b|\\b1000\\b|\\b2000\\b|\\b5000\\b|\\b10000\\b)"
+  }
+]

@@ -1,0 +1,139 @@
+version: '3.1'
+intents:
+- add:
+    use_entities: true
+- affirm
+- bot_challenge
+- curiosity
+- delete:
+    use_entities: true
+- deny
+- goodbye
+- greet
+- help
+- info_day:
+    use_entities: true
+- info_month:
+    use_entities: true
+- info_range:
+    use_entities: true
+- info_stats:
+    use_entities: true
+- info_stats_month:
+    use_entities: true
+- info_tipology:
+    use_entities: true
+- mood_great
+- mood_unhappy
+- nlu_fallback
+- start
+- stop
+entities:
+- oggetto
+- data
+- tipologia
+- prezzo
+- range
+- mese
+slots:
+  data:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: data
+  range:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: range
+  mese:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: mese
+  oggetto:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: oggetto
+  tipologia:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: tipologia
+  prezzo:
+    type: float
+    min_value: 0
+    max_value: 10000
+    mappings:
+    - type: from_entity
+      entity: prezzo
+responses:
+  utter_start:
+  - text: Benvenuto! Sono il tuo chatbot personale per la gestione del tuo portafoglio. Ti aiuterò a tenere traccia di tutti i tuoi acquisti e a monitorare il tuo andamento economico!
+  - text: Ciao amico, sono un cahtbot per gestire le tue finanze. Salvo la tua spesa giornaliera e ti dico le statistiche delle spese.
+  utter_stop:
+  - text: Goodbye, friend!
+  utter_greet:
+  - text: Hey! Come stai?
+  utter_cheer_up:
+  - text: 'Ecco qualcosa per tirarti su di morale:'
+    image: https://i.imgur.com/nGF1K8f.jpg
+  utter_did_that_help:
+  - text: Ti ha aiutato?
+  utter_happy:
+  - text: Ottimo, continua così!
+  utter_goodbye:
+  - text: Ciao
+  utter_iamabot:
+  - text: Sono un bot, alimentato da Rasa.
+  utter_help:
+  - text: |
+      "Puoi chiedermi tutto riguardo le tue spese, come quanto hai speso in un uno o più giorni, 
+      le informazioni sulle tue spese, le spese su una particolare tipologia di oggetti.
+      Se vuoi inserire una nuova spesa, devi dirmi il giorno, il mese, l'anno, l'oggetto acquistato, la sua tipologia e il suo prezzo.
+      Se vuoi eliminare una spesa specifica, devi indicarmi l'oogetto e la data(il giorno, il mese e l'anno)."
+  utter_curiosity:
+  - text: Il termine denaro deriva dal latino denarius , una moneta d'argento romana.
+  - text: La carta moneta fu inventata in Cina durante la dinastia Tang nell'VIII secolo.
+  - text: La carta moneta più antica ancora esistente è una banconota cinese emessa durante la dinastia Song nel X secolo.
+  - text: La più grande banconota mai stampata è stata la banconota da 100 trilioni di dollari dello Zimbabwe, emessa nel 2009.
+  - text: Il termine miliardario è stato coniato per la prima volta nel 1829 per descrivere una persona con una fortuna di almeno un miliardo di dollari.
+  - text: Il 90% dei soldi nel mondo esiste solo come valuta elettronica, mentre solo il 10% è rappresentato da banconote e monete fisiche.
+  - text: Negli Stati Uniti, le monete da un centesimo costano più di un centesimo da produrre a causa del costo dei materiali.
+  - text: Il dollaro americano è la valuta più utilizzata nelle transazioni internazionali, seguito dall'euro.
+  - text: Il termine bitcoin è stato coniato nel 2008 e deriva dalla parola bit e coin.
+  - text: Nel 2010, qualcuno ha acquistato due pizze per 10.000 bitcoin, rendendolo uno degli acquisti più costosi della storia.
+  utter_fallback:
+  - text: |
+      "Mi dispiace! Non ho capito cosa intendevi! Per favore, utilizza una delle seguenti opzioni.
+      1. inserisci acquisto
+      2. elimina acquisto
+      3. ricerca spese per un dato giorno
+      4. informazioni spese riguardo una tipologia specifica
+      5. calcolare le statistiche delle spese
+      6. calcolare le statistiche delle spese per un mese specifico
+      7. calcolare le statistiche delle spese in un range di date specifico "
+actions:
+- utter_greet
+- action_add
+- utter_help
+- action_info_tipology
+- utter_fallback
+- action_info_day
+- utter_cheer_up
+- utter_did_that_help
+- utter_happy
+- utter_goodbye
+- utter_iamabot
+- utter_curiosity
+- action_delete
+- action_info_range
+- action_stats_month
+- action_info_stats
+- action_my_fallback
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

@@ -1,0 +1,40 @@
+giorno,mese,anno,oggetto,tipologia,prezzo,data
+1,5,2023,Smartphone,elettronica,500.0,1/5/2023
+2,5,2023,Tastiera,elettronica,80.0,2/5/2023
+3,5,2023,Cuffie,elettronica,100.0,3/5/2023
+4,5,2023,Libro,cultura,20.0,4/5/2023
+5,5,2023,Orologio,accessori,200.0,5/5/2023
+6,5,2023,Scarpe,abbigliamento,70.0,6/5/2023
+7,5,2023,Giacca,abbigliamento,150.0,7/5/2023
+8,5,2023,Laptop,elettronica,1000.0,8/5/2023
+9,5,2023,Borsa,accessori,50.0,9/5/2023
+10,5,2023,Televisore,elettronica,800.0,10/5/2023
+11,5,2023,Mouse,elettronica,30.0,11/5/2023
+13,5,2023,Profumo,bellezza,60.0,13/5/2023
+14,5,2023,Gioielli,accessori,250.0,14/5/2023
+15,5,2023,Fotocamera,elettronica,400.0,15/5/2023
+16,5,2023,Maglietta,abbigliamento,25.0,16/5/2023
+17,5,2023,Pantaloni,abbigliamento,60.0,17/5/2023
+18,5,2023,Auricolari,elettronica,50.0,18/5/2023
+19,5,2023,Gioco da tavolo,intrattenimento,30.0,19/5/2023
+20,5,2023,Lampada,casa,40.0,20/5/2023
+21,5,2023,Giocattolo,intrattenimento,15.0,21/5/2023
+22,5,2023,Macchina fotografica,elettronica,600.0,22/5/2023
+23,5,2023,Portafoglio,accessori,40.0,23/5/2023
+24,5,2023,Videogame,intrattenimento,70.0,24/5/2023
+25,5,2023,Braccialetto,accessori,30.0,25/5/2023
+26,5,2023,Stampante,elettronica,150.0,26/5/2023
+27,5,2023,Occhiali da sole,accessori,100.0,27/5/2023
+28,5,2023,Microfono,elettronica,80.0,28/5/2023
+29,5,2023,Zaino,accessori,60.0,29/5/2023
+30,5,2023,Casse Bluetooth,elettronica,100.0,30/5/2023
+1,6,2023,The,alimentari,10.0,1/6/2023
+3,6,2023,Palla da calcio,sport,15.0,3/6/2023
+4,6,2023,Puzzle,intrattenimento,20.0,4/6/2023
+5,6,2023,Olio essenziale,bellezza,15.0,5/6/2023
+5,6,2023,Strumento musicale,intrattenimento,200.0,5/6/2023
+7,6,2023,Binocolo,accessori,50.0,7/6/2023
+8,6,2023,Cassettiera,casa,150.0,8/6/2023
+5,3,2023,tablet,elettronica,79.0,5/3/2023
+17,6,2023,vaso,intrattenimento,27.0,17/06/2023
+19,6,2023,vaso,intrattenimento,850.0,19/06/2023
