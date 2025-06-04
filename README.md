@@ -89,10 +89,10 @@ All reports and written deliverables are available in the `Relazioni/` folder an
 
 1. **Clone the repository**:
 
-```bash
+    ```bash
     git clone https://github.com/Badar97/Progetto_DataScience.git
     cd Progetto_DataScience
-```
+    ```
 
 2. **Explore each folder based on the module you're interested in.**
 3. **Run Python scripts or notebooks**  (some modules may require installing specific libraries with `pip install -r requirements.txt`).
