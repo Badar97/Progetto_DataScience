@@ -1,100 +1,88 @@
-# 📊 Data Science Project – UNIVPM (2022/2023)
+# Data Science Project - UNIVPM (2022/2023)
 
-This repository contains the final group project for the **Data Science** course, part of the Bachelor's Degree in Computer and Automation Engineering at **Università Politecnica delle Marche (UNIVPM)** during the academic year **2022/2023**.
+This repository contains the final group project for the Data Science course, part of the Bachelor's Degree in Computer and Automation Engineering at Universita Politecnica delle Marche (UNIVPM), academic year 2022/2023.
 
-> The project explores multiple areas of data science including business intelligence, machine learning, NLP, and conversational AI.
+The project covers several areas of data science, from business intelligence and predictive analytics to social network analysis, conversational AI, and natural language processing.
 
----
-
-## 👥 Team Members
+## Team Members
 
 - [Ali Waqar Badar](https://github.com/Badar97)
 - Angelone Mattia Domenico
 - Giannelli Edoardo
 - Romanelli Marco
 
----
+## Project Modules
 
-## 🎯 Project Modules
+### 1. Business Intelligence
 
-The project is divided into five main sections:
+Analysis and visualization of video game sales data using Qlik Sense, Tableau, and Power BI.
 
-### 1. 📈 Business Intelligence  
-Analysis and visualization using:
-- Qlik Sense
-- Tableau
-- Power BI
+Folder: `1-Qlik_Tableau_PowerBI/`
 
-📁 Folder: `1-Qlik_Tableau_PowerBI/`
+### 2. Predictive and Prescriptive Analytics
 
----
+Python notebooks for data analysis, classification, clustering, and time-series analysis.
 
-### 2. 🧠 Predictive and Prescriptive Analytics  
-Data processing and prediction using Python:
-- Data cleaning
-- Predictive modeling
-- Prescriptive decision support
+Folder: `2-Python/`
 
-📁 Folder: `2-Python/`
+### 3. Social Network Analysis
 
----
+Graph analysis of a jazz musician collaboration network using Python and NetworkX.
 
-### 3. 🌐 Social Network Analysis  
-Exploring graph theory and relationships using:
-- Python `NetworkX`
+Folder: `3-NetworkX/`
 
-📁 Folder: `3-NetworkX/`
+### 4. Conversational AI
 
----
+RASA chatbot project with intents, stories, rules, actions, and trained models.
 
-### 4. 🤖 Conversational AI  
-Designing and implementing a chatbot using:
-- RASA framework (intent classification, stories, responses)
+Folder: `4-Rasa/`
 
-📁 Folder: `4-Rasa/`
+### 5. Natural Language Processing
 
----
+BERT-based notebooks for text classification and fine-tuning experiments.
 
-### 5. 🧬 Natural Language Processing  
-Sentiment and text classification with:
-- BERT transformer model
+Folder: `5-Bert/`
 
-📁 Folder: `5-Bert/`
-
----
-
-## 🛠️ Technologies Used
+## Technologies
 
 - Python
-- Jupyter Notebooks
-- Power BI / Tableau / Qlik Sense
+- Jupyter Notebook
+- Power BI
+- Tableau
+- Qlik Sense
 - NetworkX
-- BERT (via HuggingFace Transformers)
-- RASA (Open Source Conversational AI)
+- RASA
+- BERT / Hugging Face Transformers
 
----
+## Datasets
 
-## 📄 Documentation
+The project uses multiple public datasets, including:
 
-All reports and written deliverables are available in the `Relazioni/` folder and include:
-- Methodology
-- Data description
-- Results
-- Visual insights
-- Conclusions
+- Video game sales data from Kaggle
+- Meteorological data from Kaggle
+- Jazz collaboration network data from Network Repository
 
----
+## Documentation
 
-## 🚀 How to Use
+Written reports and deliverables are available in the `Relazioni/` folder:
 
-1. **Clone the repository**:
+- `1_Business Intelligence.pdf`
+- `2_Python.pdf`
+- `3_Social Network Analysis.pdf`
+- `4_Chatbot.pdf`
+- `5_BERT.pdf`
 
-    ```bash
-    git clone https://github.com/Badar97/Progetto_DataScience.git
-    cd Progetto_DataScience
-    ```
+## How to Use
 
-2. **Explore each folder based on the module you're interested in.**
-3. **Run Python scripts or notebooks**  (some modules may require installing specific libraries with `pip install -r requirements.txt`).
+1. Clone the repository:
 
->📌 This project was created for educational purposes as part of the Data Science course at UNIVPM.
+   ```bash
+   git clone https://github.com/Badar97/Progetto_DataScience.git
+   cd Progetto_DataScience
+   ```
+
+2. Open the folder related to the module you want to explore.
+
+3. Run the notebooks or open the BI files with the corresponding tools.
+
+> This project was developed for educational purposes as part of the Data Science course at UNIVPM.
